@@ -9,7 +9,6 @@ app.use(express.json());
 app.use(cors());
 
 // Set SendGrid API Key
-//sgMail.setApiKey('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'); // Replace with your actual API key
 require('dotenv').config();
 sgMail.setApiKey(process.env.SENDGRID_API_KEY);
 
